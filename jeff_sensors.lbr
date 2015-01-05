@@ -294,7 +294,7 @@ TGS 2610 - Gas Sensor</description>
 </devices>
 </deviceset>
 <deviceset name="SHT10">
-<description>Soil Moisture SHT10 Sensor</description>
+<description>SHT-10 Based Soil Moisture and Humidity Sensor</description>
 <gates>
 <gate name="G$1" symbol="SHT10" x="0" y="0"/>
 </gates>
