@@ -362,8 +362,8 @@
 </devices>
 </deviceset>
 <deviceset name="JMP1X3" prefix="JP" uservalue="yes">
-<description>&lt;b&gt;Header 3&lt;/b&gt;
-Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-00116), right angle break away headers (PRT-00553), swiss pins (PRT-00743), machine pins (PRT-00117), and female headers (PRT-00115). Molex polarized connector foot print use with SKU : PRT-08232 with associated crimp pins and housings.</description>
+<description>&lt;b&gt;3 Pin Jumper&lt;/b&gt;
+Use standard 3-pin 0.1" header, use a 2 position jumper to connect either pin 1 and 2 or 2 and 3. This will allow alternate circuit paths to be chosen in a semi-permanent state</description>
 <gates>
 <gate name="G$1" symbol="JMP1X3" x="-2.54" y="0"/>
 </gates>

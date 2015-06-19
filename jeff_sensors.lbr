@@ -17,7 +17,7 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
@@ -136,6 +136,20 @@ Beckman Helitrim 64</description>
 <pad name="P$3" x="1.27" y="-1.27" drill="0.8" shape="square"/>
 <pad name="P$4" x="1.27" y="1.27" drill="0.8" shape="square"/>
 </package>
+<package name="NAPION-10M">
+<description>Panasonic NaPiOn AMN-2/3 10m</description>
+<circle x="0" y="0" radius="8.7122" width="0.127" layer="21"/>
+<circle x="0.0254" y="-0.0254" radius="5.48645625" width="0.127" layer="21"/>
+<pad name="P$1" x="1.778" y="1.778" drill="0.8" shape="square"/>
+<pad name="P$2" x="-1.778" y="1.778" drill="0.8"/>
+<pad name="P$3" x="-1.778" y="-1.778" drill="0.8"/>
+<text x="2.794" y="1.524" size="0.6096" layer="21">GND</text>
+<text x="-4.318" y="1.524" size="0.6096" layer="21">OUT</text>
+<text x="-4.318" y="-2.032" size="0.6096" layer="21">Vdd</text>
+<text x="4.572" y="1.524" size="0.6096" layer="22" rot="MR0">GND</text>
+<text x="-2.794" y="1.524" size="0.6096" layer="22" rot="MR0">OUT</text>
+<text x="-2.794" y="-2.032" size="0.6096" layer="22" rot="MR0">Vdd</text>
+</package>
 </packages>
 <symbols>
 <symbol name="TGS-2610">
@@ -232,6 +246,12 @@ Beckman Helitrim 64</description>
 <text x="-7.62" y="7.62" size="1.778" layer="94">Soil Moisture
 SHT10 Sensor</text>
 </symbol>
+<symbol name="NAPION-10M">
+<circle x="0" y="0" radius="8.636" width="0.254" layer="94"/>
+<pin name="GND" x="2.54" y="2.54" length="middle"/>
+<pin name="OUT" x="-2.54" y="2.54" length="middle" rot="R180"/>
+<pin name="VDD" x="-2.54" y="-2.54" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TGS-2610" prefix="SN">
@@ -305,6 +325,23 @@ TGS 2610 - Gas Sensor</description>
 <connect gate="G$1" pin="DATA" pad="P$3"/>
 <connect gate="G$1" pin="GND" pad="P$4"/>
 <connect gate="G$1" pin="VCC" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AMN24111">
+<gates>
+<gate name="G$1" symbol="NAPION-10M" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="NAPION-10M">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$1"/>
+<connect gate="G$1" pin="OUT" pad="P$2"/>
+<connect gate="G$1" pin="VDD" pad="P$3"/>
 </connects>
 <technologies>
 <technology name=""/>
