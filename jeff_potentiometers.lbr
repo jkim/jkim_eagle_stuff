@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -811,7 +811,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </device>
 </devices>
 </deviceset>
-<deviceset name="3549S-1AA-503A">
+<deviceset name="3549S-1AA-503A" prefix="R">
 <description>Bourns 3549 - 10-Turn Precision Potentiometer</description>
 <gates>
 <gate name="G$1" symbol="POT_SYM" x="0" y="0"/>

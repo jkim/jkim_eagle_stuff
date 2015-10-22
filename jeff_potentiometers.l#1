@@ -550,9 +550,9 @@ Matches 4UCONN part # 11026&lt;br&gt;
 <vertex x="2.6988" y="0.4764"/>
 <vertex x="2.6988" y="-0.4764"/>
 </polygon>
-<pin name="P$1" x="0" y="-5.08" length="middle" rot="R270"/>
-<pin name="P$2" x="5.08" y="0" length="middle"/>
-<pin name="P$3" x="0" y="5.08" length="middle" rot="R90"/>
+<pin name="1" x="0" y="-5.08" length="middle" rot="R270"/>
+<pin name="2" x="5.08" y="0" length="middle"/>
+<pin name="3" x="0" y="5.08" length="middle" rot="R90"/>
 </symbol>
 <symbol name="M03">
 <wire x1="3.81" y1="-5.08" x2="-2.54" y2="-5.08" width="0.4064" layer="94"/>
@@ -819,9 +819,9 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <devices>
 <device name="" package="1X03_LONGPADS">
 <connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$1" pin="P$2" pad="2"/>
-<connect gate="G$1" pin="P$3" pad="3"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
